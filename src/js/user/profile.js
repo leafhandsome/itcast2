@@ -10,4 +10,12 @@ $.ajax({
             $('.teacher-profile').html(html);
         }
     }
+});
+$('#teacher_profile-form').ajaxForm({
+    delegation: true,
+    success: function(data) {
+        if (data.code == 200) {
+            alert('修改成功')
+        }
+    }
 })
