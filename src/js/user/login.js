@@ -1,3 +1,4 @@
+require('../common/common.js');
 var userObj = JSON.parse(localStorage.getItem('str')) || {};
 var tc_avatar = userObj.tc_avatar || '/public/img/default.png';
 $('.avatar img').attr('src', tc_avatar);

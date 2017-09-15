@@ -35,7 +35,7 @@
         {{each $data course i}}
         <div class="course">
             <div class="pic">
-                <img src="{{course.cs_cover ||'public/img/course.png'}}" alt="">
+                <img src="{{course.cs_cover ||'/public/img/course.png'}}" alt="">
             </div>
             <div class="info">
                 <a href="/itcast/dist/html/course/course_edit_step1.html?cs_id={{course.cs_id}}">{{course.cs_name}}</a>

@@ -17,7 +17,7 @@ gulp.task('html', function() {
             aside: gulp.src('src/html/common/aside.html'),
             header: gulp.src('src/html/common/header.html'),
             courseHeader: gulp.src('src/html/common/course/header.html'),
-            courseLeft: gulp.src('src/html/common/course/header.html')
+            courseLeft: gulp.src('src/html/common/course/left.html')
 
         }))
         .pipe(htmlmin({
@@ -45,7 +45,9 @@ var jsLibs = [
     'node_modules/art-template/lib/template-web.js',
     'node_modules/jquery/dist/jquery.js',
     'node_modules/bootstrap/dist/js/bootstrap.js',
-    'node_modules/jquery-form/dist/jquery.form.min.js'
+    'node_modules/jquery-form/dist/jquery.form.min.js',
+    'node_modules/jquery.cookie/jquery.cookie.js',
+    'node_modules/nprogress/nprogress.js'
 ];
 // 合并所有的第三方包为一个js
 gulp.task('jsLib', function() {
